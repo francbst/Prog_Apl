@@ -1,59 +1,24 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 using namespace std;
 
-/*
-struct palavra{
-  string nome;
-
-};
-*/
-char trocaletra(char letra);
-
-int main()
+int main(void)
 {
-  char palavra;
-  int i;
-
-  cout<<"Digite a palavra: "<<endl;
-  cin>>palavra;
-
- 
-  while(palavra!= '\0')
+  string palavra, x, y;
+  cout<<"Digitar palavra"<<endl;
+  getline(cin, palavra);
+  
+  for (int i =0; i< palavra.size(); i++)
   {
-    palavra=trocaletra(palavra);
-    
+    cout<<"Digitar letra"<<endl;
+    getline(cin, x);
+    cout<<"Digitar letra"<<endl;
+    getline(cin, y);
+    cout<<palavra;
+ 
   }
-
-  cout<<palavra<<endl;
-
-  cout<<("\n\n");
+  for ()
   return 0;
 }
-
-char trocaletra(char letra)
-{
-  char novaletra;
-
-  switch (letra)
-  {
-    case 'a':
-    case 'e':
-    case 'E':
-    case 'i':
-    case 'I':
-    case 'o':
-    case 'O':
-    case 'u':
-    case 'U':
-      novaletra = 'A';
-      break;
-
-    default:
-      novaletra = letra;
-      break;
-  }
-  return novaletra;
-}
+  

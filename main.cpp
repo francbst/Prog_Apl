@@ -2,8 +2,14 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-  char nome[] = {'f', 'r', 'a','n', 'c', 'i', 's', 'c', 'o'};
+  char nome[] = "Francisco";
+  int i = 0;
+  while(nome[i])
+  {
+    cout<< nome[i++];
 
-  cout<< nome<<endl;
+  }
+
+  
   return 0;
 }

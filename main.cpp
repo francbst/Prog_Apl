@@ -15,18 +15,16 @@ int main()
   }
   while(pala.size() >12 );
   for (int i = 0; i < pala.size(); i++ ){
-    if (pala[i] == x)
+  
+  if (pala[i] == x)
     pala[i] = y;
+
+  }
     cout<<"Digitar letra"<<endl;
     cin>>x;
     cout<<"Digitar letra"<<endl;
     cin>>y;
-  }
 
     cout <<pala<<endl;
-   
-    
-  
-  
   return 0;
 }

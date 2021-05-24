@@ -14,17 +14,18 @@ int main()
     getline(cin, pala);
   }
   while(pala.size() >12 );
+  cout<<"Digitar letra"<<endl;
+  cin>>x;
+  cout<<"Digitar letra"<<endl;
+  cin>>y;
+
   for (int i = 0; i < pala.size(); i++ ){
   
   if (pala[i] == x)
     pala[i] = y;
 
   }
-    cout<<"Digitar letra"<<endl;
-    cin>>x;
-    cout<<"Digitar letra"<<endl;
-    cin>>y;
-
+    
     cout <<pala<<endl;
   return 0;
 }

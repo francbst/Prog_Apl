@@ -14,13 +14,13 @@ int main()
     cin>>x;
     cout<<"Digitar letra"<<endl;
     cin>>y;
-    
+    for ( i = x ){
+    x=y;
   }
-  while(pala.size() >12 );
-  if ([i]==x );
-  else x=y;
+  }
+    cout<<x<<y;
     cout<<pala<<endl;
-  } 
+   
     
   
   

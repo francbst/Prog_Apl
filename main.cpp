@@ -1,29 +1,32 @@
 #include <iostream>
-#include <string>
+#include <string.h>
+
 using namespace std;
+
+string pala;
+char x, y;
+
 int main()
 {
-  string pala, x , y;
+
   do{
     cout<<"Digite uma palavra: "<<endl;
     getline(cin, pala);
   }
   while(pala.size() >12 );
   for (int i = 0; i < pala.size(); i++ ){
+    if (pala[i] == x)
+    pala[i] = y;
     cout<<"Digitar letra"<<endl;
     cin>>x;
     cout<<"Digitar letra"<<endl;
     cin>>y;
-    for ( i = x ){
-    x=y;
   }
-  }
-    cout<<x<<y;
-    cout<<pala<<endl;
+
+    cout <<pala<<endl;
    
     
   
   
   return 0;
 }
-  

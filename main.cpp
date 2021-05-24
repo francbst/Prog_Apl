@@ -5,6 +5,7 @@ using namespace std;
 
 string pala;
 char x, y;
+int trocas=0;
 
 int main()
 {
@@ -20,11 +21,13 @@ int main()
   cin>>y;
   cout<<pala<<endl;
   for (int i = 0; i < pala.size(); i++ ){
-  
-  if (pala[i] == x)
-    pala[i] = y;
+    if (pala[i] == x){
+      pala[i] = y;
+      trocas++;
+    }
   }
     
-  cout <<pala<<endl;
+  cout << pala << endl;
+  cout << trocas << endl;
   return 0;
 }

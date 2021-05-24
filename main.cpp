@@ -18,14 +18,13 @@ int main()
   cin>>x;
   cout<<"Digitar letra"<<endl;
   cin>>y;
-
+  cout<<pala<<endl;
   for (int i = 0; i < pala.size(); i++ ){
   
   if (pala[i] == x)
     pala[i] = y;
-
   }
     
-    cout <<pala<<endl;
+  cout <<pala<<endl;
   return 0;
 }
